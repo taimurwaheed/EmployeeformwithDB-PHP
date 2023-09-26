@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Information Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Employee Information Form</h2>
+    <form action="./insert.php" method="POST">
+      <label for="name">First Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required />
+
+      <label for="fathername">Father Name:</label>
+      <input type="text" id="fathername" name="fathername" required />
+
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" minlength="1" maxlength="11" required />
+
+      <label for="cnic">CNIC:</label>
+      <input
+        type="text"
+        id="cnic"
+        name="cnic"
+        minlength="13"
+        maxlength="13"
+        required
+      />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required />
+
+      <label for="jobtitle">Job Title:</label>
+      <input type="text" id="jobtitle" name="jobtitle" required />
+
+      <label for="salary">Salary:</label>
+      <input type="number" id="salary" name="salary" required />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
