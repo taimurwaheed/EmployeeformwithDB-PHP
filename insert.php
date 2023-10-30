@@ -23,7 +23,8 @@
 
     $result = $con->query($qry);
     if($result){
-        echo "Data has been saved successfully.";
+        // echo "Data has been saved successfully.";
+        header("Location: ./select.php");
     }
     else {
         echo "Data didn't save";
